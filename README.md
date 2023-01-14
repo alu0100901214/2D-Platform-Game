@@ -116,8 +116,45 @@ If we approach its trigger and press the E key, it positions us in another part 
 
 ## UI elements
 
+For the UI we use the Canvas of unity, the different buttons that we find will have an attached function.
+
 ### Energy Bar
+
+When the character gains or loses energy, this bar changes. For this we use a slider and we change its value on "EnergyBar.cs" script.
+
+![gif](./GIF/energyBar.gif)
 
 ### Main Menu
 
+(mainMenuManager.cs)
+The main menu allows us to exit the game or start it. We can change scene using SceneManager:
+
+```
+SceneManager.LoadScene("testLevel");
+```
+
+and exit with Application:
+
+```
+Application.Quit();
+```
+
 ### Pause Menu
+
+On the "GameManager.cs" script when we press the escape key, we stop the game by setting Time.timeScale to 0, and continue it setting Time.timeScale to 1.
+
+```
+  if(Input.GetKeyDown(KeyCode.Escape)){
+    if(!isPaused){
+      isPaused = true;
+      pauseMenu.SetActive(true);
+      Time.timeScale = 0;
+    } else {
+      isPaused = false;
+      pauseMenu.SetActive(false);
+      Time.timeScale = 1;
+    }
+  }
+```
+
+![gif](./GIF/ui.gif)
