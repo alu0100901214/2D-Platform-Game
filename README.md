@@ -167,4 +167,9 @@ Within the "SFX.cs" script the audios are linked so that they can be called with
 These sound effects are from the unity asset store.
 
 [Retro SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-retro-sfx-pack-43256)
+
 [8-Bit Sfx](https://assetstore.unity.com/packages/audio/sound-fx/8-bit-sfx-32831#reviews)
+
+[8-Bit Style Sound Effects](https://assetstore.unity.com/packages/audio/sound-fx/8-bit-style-sound-effects-68228#reviews)
+
+[Casual Game SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116#reviews)
