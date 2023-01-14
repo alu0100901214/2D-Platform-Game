@@ -26,6 +26,13 @@ For the shots of the projectiles the pooling technique has been used. In the "ob
 
 ## Character Animations
 
+The character features idle, walking, and jumping animations.
+The first one occurs when we don't move, the second one when we move (the character does a flip to the sprite depending on whether he moves to the left or to the right). And finally, when we jump, there is an animation when the character moves up and another when he falls.
+
+This last animation occurs in any state (whether we are walking or idle). The falling animation occurs after the character stops boosting up or when falling off an edge, it is detected when the Rigidbody2D.velocity has some negative velocity.
+
+![gif](./GIF/characterAnimation.gif)
+
 ## Stage Components
 
 The stage is composed of a rectangular tileMap together with a Tilemap collider 2D and a Composite collider 2D so that the character can interact with their physics.
@@ -76,5 +83,41 @@ In addition, the priority of the cinemachine is changed so that we can see the s
 
 ## Grappling Hook
 
+Another important element is the grappling hook. When the character presses the E key near an anchor point it hangs from this point and swings, when you press the E key again, it is propelled into the air.
+To achieve this effect a Distance Joint 2D has been used, this is enabled or disabled when we are connected.
+
+In the "GrapplingItem.cs" script if the player gets close to its trigger, we connect the connectedBody of the Distance joint to anchor point. If it zooms out, we leave connectedBody to null.
+In the "GrapplingHook.cs" script if the character contains something in its connectedBody, the Distance joint is enabled, a line is drawn between the anchor point and the character and the player can swing. If the player presses the E key while the hook is activated, Distance joint is disabled and the line is no longer drawn.
+
+![gif](./GIF/grapplingHook.gif)
+
 ## Other Elements
 
+Other elements of the game are:
+
+### Coins
+
+When we get close to its trigger, we deactivate it and it recovers our energy. (WattCoin.cs)
+
+### Jumper
+
+When we jump on them and activate their trigger, it propels our character up. (Jumper.cs)
+
+### Boxes with physics
+
+They are objects with collider2D and rigidbody2D that we can push to solve small puzzles. 
+
+### Teleport door
+
+If we approach its trigger and press the E key, it positions us in another part of the stage. (Door.cs)
+
+![gif](./GIF/otherElements.gif)
+
+
+## UI elements
+
+### Energy Bar
+
+### Main Menu
+
+### Pause Menu
