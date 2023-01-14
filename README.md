@@ -164,6 +164,7 @@ On the "GameManager.cs" script when we press the escape key, we stop the game by
 
 Some sound effects have been added to the game. All of them are stored in an empty object with several AudioSources.
 Within the "SFX.cs" script the audios are linked so that they can be called with a function when we need them.
+
 These sound effects are from the unity asset store.
 
 [Retro SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-retro-sfx-pack-43256)
