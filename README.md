@@ -127,6 +127,7 @@ When the character gains or loses energy, this bar changes. For this we use a sl
 ### Main Menu
 
 (mainMenuManager.cs)
+
 The main menu allows us to exit the game or start it. We can change scene using SceneManager:
 
 ```
@@ -158,3 +159,12 @@ On the "GameManager.cs" script when we press the escape key, we stop the game by
 ```
 
 ![gif](./GIF/ui.gif)
+
+## SFX
+
+Some sound effects have been added to the game. All of them are stored in an empty object with several AudioSources.
+Within the "SFX.cs" script the audios are linked so that they can be called with a function when we need them.
+These sound effects are from the unity asset store.
+
+[Retro SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-retro-sfx-pack-43256)
+[8-Bit Sfx](https://assetstore.unity.com/packages/audio/sound-fx/8-bit-sfx-32831#reviews)
