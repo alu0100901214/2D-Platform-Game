@@ -174,3 +174,7 @@ These sound effects are from the unity asset store.
 [8-Bit Style Sound Effects](https://assetstore.unity.com/packages/audio/sound-fx/8-bit-style-sound-effects-68228#reviews)
 
 [Casual Game SFX Pack](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116#reviews)
+
+## Gameplay Video
+
+[Gameplay on youtube](https://youtu.be/UhSLsByS55E)
