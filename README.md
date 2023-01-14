@@ -9,12 +9,12 @@ This is a prototype of a 2D platform and action videogame where we will control 
 We can use different controls with our character starting with the movement. 
 To be able to control the movement more accurately rigidbody2D velocity has been used in all character movements:
 
-´´´
+```
   horizontalInput = Input.GetAxisRaw("Horizontal");
   float currentSpeed = horizontalInput * speed * Time.fixedDeltaTime;
   Vector2 velocity = new Vector2(currentSpeed, rb2D.velocity.y);
   rb2D.velocity = velocity;
-´´´
+```
 
 For the jump, a 2D box collider with trigger activated has been added, so that it detects the ground and only lets the character jump when it is attached to it.
 
